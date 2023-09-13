@@ -32,13 +32,12 @@ class Cilveks:
             print("Es esmu vīrietis")
         else:
             print("Es esmu", self.dzimums)
+    
+    def __del__(self): #kas pappildu jādara pirms objektu, iznīcina, izmantojot del
+        print("Atā 4eva!")
+        
 
 
 
-
-
-
-pirmais = Cilveks("Anna", 18, "s")
-pirmais.mainit_dzimumu("nekatrs")
 
    
