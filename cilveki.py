@@ -7,7 +7,7 @@ layout = [
     [sg.Text("Vecums"), sg.InputText(key="age")],
     [sg.Text("Dzimums"), sg.InputText(key="gender")],
     [sg.Text("Numurs"), sg.InputText(key="number")],
-    [sg.Button("Pievienot personu"), sg.Button("Dzimšanas diena!"), sg.Button("Mainīt vārdu"), sg.Button("Mainīt dzimumu"), sg.Button("Dzēst")],
+    [sg.Button("Pievienot personu"), sg.Button("Dzimšanas diena!"), sg.Button("Mainīt vārdu"), sg.Button("Mainīt dzimumu"), sg.Button("Iziet")],
     [sg.Text("Cilvēki:")],
     [sg.Multiline("", size=(30, 10), key="people_list")]
 ]
