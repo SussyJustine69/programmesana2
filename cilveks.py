@@ -24,7 +24,7 @@ class Cilveks:
         self.info()
 
     def info(self):
-        print("Sveiki,mani sauc", self.vards)
+        print("Sveiki, mani sauc", self.vards)
         print("Man ir", self.vecums, " gadu")
         if self.dzimums == "s":
             print("Es esmu Sieviete")
@@ -33,21 +33,21 @@ class Cilveks:
         else:
             print("Es esmu", self.dzimums)
     
-    def __del__(self): #kas pappildu jādara pirms objektu, iznīcina, izmantojot del
+    def __del__(self): #kas papildu jādara pirms objektu, iznīcina, izmantojot del
         print("Atā 4eva!")
         
 class Sieviete(Cilveks):
     def __init__(self, name, age, hair_color):
        super().__init__( name, age, "s")
-       self.matu_krasa = hair_color
+       self.__matu_krasa = hair_color
        self.info()
 
     def info(self):
         super().info()
-        print("Mana matu krāsa ir", self.matu_krasa)   
+        print("Mana matu krāsa ir", self.__matu_krasa)   
 
 
-pirmais = Sieviete("Anna",18, "Blonda")
-
-print(pirmais.matu_krasa)
+pirmais = Sieviete("Anna",18,"Blonda")
+print(pirmais._Sieviete__matu_krasa)
+#print(pirmais.matu_krasa)
    
